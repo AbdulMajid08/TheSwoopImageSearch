@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap'); 
+/* this is for the fonts we got it from google fonts*/
+
+
+*{/*this changes the font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    line-height: 1.6;
+}
+
+h1{ /*this is what centers our title to the middle of the page */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+form{ /*moves our search bar to the center of the page as well*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{ /*this edits the input box and lets us customize it and make it look better*/
+
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+#search-button{ /*this edits the search button and lets us customize it and make it look better*/
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-results{ /*this edits the space between the pictuers that will pop up as search results*/
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{ /*targets the serach result box and control our images that are present on screen so far*/
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6x rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(161, 184, 176); /* Background color for the frame */
+    border: 2px solid #2c8855; /* Border color for the frame */
+}
+
+.search-result img{ /*but we need the images to take the correct width and height so we have to do this*/
+    width: 100%;
+    height: 200px; /* in order to make all the images the same size and in a nice format */
+    object-fit: cover;
+
+    border-bottom: 2px solid #138065; /* Add a border at the bottom of the image to create the frame */
+    transform: opacity 0.2s ease-in-out;
+}
+
+
+.search-result:hover img{ /*this is to creat a different opacity the og one is 1 so we change it to 0.8 every time we hover over it*/
+    opacity: 0.8;
+}
+
+.search-result a { /*we are targeting the anchor tag here, the words under the picture*/
+    font-size: 20px;
+    text-decoration: none;
+    color: #050505;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button { /*creats a show more button at the very buttom*/
+    background-color: #138065;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;  /* set it to none so that it originally does not show up on the screen but when we have more than one page of results we have it show up in or JS file*/
+}
+
+/*so far the website is not responsive so we need a media query */
+
+/*these steps make so that when the screen is not full size or being changed the pcitures also move in order to stay in a good format*/
+
+@media screen and (max-width: 768px){
+    .search-results{
+        padding: 20px;
+    }
+    .search-result{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .search-result{
+        width: 100%;
+    }
+}
+
+

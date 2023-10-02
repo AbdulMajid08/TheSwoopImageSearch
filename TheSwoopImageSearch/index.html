@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- this links our css file-->
+</head>
+
+<!-- this is to add a background to the website of our choosing based on the url and we can get any image address we want for the url:-->
+<style>
+    body { 
+      background-image: url('https://static.clubs.nfl.com/image/upload/v1643905779/eagles/wme4xbzoejuoxa5cx80s.png');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+
+<body>
+
+    <h1 style="color: mediumspringgreen;">The Swoop Image Search</h1> <!-- this creats the heading on our website-->
+    <form action=""> <!-- this is what is going to creat an input box and the button to search-->
+        <input type="text" id="search-input" placeholder="Search for images"> <!-- the place holder is what tells us what to type in the search bar before we click it-->
+        <button id="search-button">Search</button>
+        
+    </form>
+    
+    <div class="search-results"> <!-- now we need to add pictures for the website-->
+        <div class="search-result"> <!-- we create a class for the images and this will be our search results-->
+            <img src="https://images.unsplash.com/photo-1518401036563-9a1e29443c0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Swoop The Eagle"> <!-- then when we find a good image we grab its image address-->
+            <a href="https://unsplash.com/photos/zlSp94lcSFc" 
+            target="_blank" style="color: red">Swoop The Eagle </a> <!-- here we creat a writing underneath the image and when we click on it we get redirected to the link on the href-->
+        </div>
+        <div class="search-result"> <!-- we create a class for the images and this will be our search results-->
+            <img src="https://images.unsplash.com/photo-1518401036563-9a1e29443c0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Swoop The Eagle"> <!-- then when we find a good image we grab its image address-->
+            <a href="https://unsplash.com/photos/zlSp94lcSFc" 
+            target="_blank" style="color: white">Swoop The Eagle</a> <!-- here we creat a writing underneath the image and when we click on it we get redirected to the link on the href-->
+        </div>
+        <div class="search-result"> <!-- we create a class for the images and this will be our search results-->
+            <img src="https://images.unsplash.com/photo-1518401036563-9a1e29443c0f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Swoop The Eagle"> <!-- then when we find a good image we grab its image address-->
+            <a href="https://unsplash.com/photos/zlSp94lcSFc" 
+            target="_blank" style="color: rgb(64, 96, 185)">Swoop The Eagle</a> <!-- here we creat a writing underneath the image and when we click on it we get redirected to the link on the href-->
+        </div>
+    </div>
+
+    <button id="show-more-button">Show More</button> <!-- creats a show more button at the very button of the herf-->
+
+    <script src="script.js"></script> <!-- this links our js file-->
+    
+</body>
+</html>
+ 
