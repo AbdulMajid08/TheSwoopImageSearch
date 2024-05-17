@@ -1,5 +1,5 @@
 
-const accessKey = "IM5Rqb1sm57YV_GJ0RjKhZowlCWBSKLKHUF_Xpx6JFU"; // to store API key
+const accessKey = ""; // to store API key
 
 //we now have to import all the important elements from the css file that the user will be inputting so that we can give a response back using them through JS
 const formEl = document.querySelector("form"); // to restore our form
